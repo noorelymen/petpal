@@ -1,0 +1,108 @@
+/* FONTS */
+@font-face {
+  font-family: Posterama;
+  src: url(./assets/fonts/Posterama.ttf);
+}
+
+@font-face {
+  font-family: Lietome;
+  src: url(./assets/fonts/Lietome.ttf);
+}
+
+:root {
+  --border-color: #d9d6d4;
+
+  --main-blue: #67acaa;
+  --secondary-blue: #c5e4f8;
+  --dark-blue: #4b8684;
+
+  --accent-color: #e28778;
+  --accent-hover: #ffc2cb;
+  --secondary-accent: #ef9da9;
+
+  --button-bg: #eecbbb;
+  --button-transparent-bg: #eecbbb00;
+  --button-bg--hover: #e5bfae;
+  --button-border-color: #eecbbb;
+  
+  --bg-dark-light: #ebe8e739;
+  --text-dark: #5b544a;
+
+  --border-radius: 10px;
+}
+
+/* GENERAL STYLING */
+*,
+html, 
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  max-width: 100%;
+}
+
+html, body {
+
+  overflow-x: hidden;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Posterama;
+}
+
+.section-title {
+  display: block;
+  width: 100%;
+  color: #2e2e2e;
+  font-size: 3.5vw;
+  text-align: left;
+  margin-top: -20px
+}
+
+.section-subtitle {
+  display: block;
+  width: 100%;
+  color: var(--accent-color);
+  font-size: 2.3vw;
+  text-align: left;
+  font-family: 'Lietome', serif;
+}
+
+
+@media only screen and (max-width: 965px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  .section-subtitle {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+/* FORMS */

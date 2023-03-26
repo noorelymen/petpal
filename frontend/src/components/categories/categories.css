@@ -1,0 +1,81 @@
+.section.categories{
+    overflow:visible;
+}
+
+.categories .container {
+    padding: 100px 0;
+    flex-direction: column;
+    overflow: visible;
+}
+
+.category-cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow: visible;
+}
+
+.category-card {
+    width: 25%;
+    height: 350px;
+    border-radius: 20px;
+    background-color: #cae2e1;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin: 50px 0;
+}
+
+.category-card:hover {
+    cursor: pointer;
+    transform: translateY(-15px);
+    transition: transform .2s ease-in-out;
+    box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dogs {
+    background-color: #d9eef6;
+    background-image: url("../../assets/puppy-2.png");
+    background-size: 330px;
+    background-position: bottom -210px right -50px;
+}
+
+/* .cats {
+    background-color: #ffdfb9;
+    background-image: url("../../assets/kitten-4.png");
+    background-size: 450px;
+    background-position: bottom -120px right -242px;
+
+} */
+
+.cats {
+    background-color: #f4d2cc;
+    background-image: url("../../assets/kitten-3.png");
+    background-size: 500px;
+    background-position: bottom -120px right -130px;
+
+}
+
+.birds {
+   background-color: #ffdfb9;
+   background-image: url("../../assets/bird-1.png");
+   background-size: 320px;
+   background-position: bottom -75px right -40px;
+}
+
+.other {
+    background-image: url("../../assets/bunny-3.png");
+    background-size: 320px;
+    background-position: bottom -50px right -20px;
+}
+
+.category-title h1 {
+    font-size: 1.5rem;
+    color: #2e2e2e;
+}
+
+.category-title h2 {
+    font-size: 1.1rem;
+    color: #2e2e2e;
+}

@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+.hero {
+    background-size: cover;
+    background-position: center center;
+    height: 75vh;
+    background-color: #b5d6d5;
+    overflow-y: hidden;
+}
+
+.hero .container {
+    flex: 1 1 auto;
+}
+
+.hero .column {
+    width: 50%;
+    height: 100%;
+}
+
+.hero .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero .right {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.hero .right img {
+    height: 95%;
+    object-fit: contain;
+    -webkit-filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(12px 5px 0px #e28778);
+}
+
+.hero .title {
+  font-size: 6vw;
+  color: #4b8684;
+  font-weight: 300;
+  line-height: 1em;
+  /* text-shadow: 3px 3px 0px #f6e39d; */
+  font-family: Posterama, sans-serif;
+}
+
+.hero .subtitle {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: Lietome, sans-serif;
+    font-weight: 500;
+    color: #e28778;
+    transform: rotate(-2deg);
+}
+
+.hero .description {
+    margin: 20px 0px;
+    color: #4b8684;
+    margin-right: 8vw;
+}
+
+.hero .button {
+    background-color: #e28778;
+    color: #fff;
+    font-weight: 300;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 230px;
+}
+
+.hero .button:hover {
+    cursor: pointer;
+    transform: translateY(-8px);
+    transition: transform .2s ease-in-out;
+}
+
+.hero .button-icon {
+    margin-left: 10px;
+    color: #fff !important;
+}
+
+.counter-box {
+    width: 10vw;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid #feb966;
+    box-shadow: 5px 5px 0 #feb966;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+
+.counter-box:first-of-type{
+    top: 10%;
+    left: 0px;
+    z-index: 99;
+}
+
+.counter-box:nth-of-type(2){
+    bottom: 50px;
+    right: 10px;
+    z-index: 99;
+}
+
+.counter-number {
+    font-family: Posterama, sans-serif;
+    font-size: 1.2rem;
+    color: #feb966;
+}
+
+.counter-title {
+    font-family: 'Poppins', sans-serif;
+    color: #feb966;
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+/* HAMBURGER MENU AND FLEX DIRECTION COLUMN BREAKING POINT  */
+@media only screen and (max-width: 965px) {
+    .hero {
+        height: auto;
+    }
+
+    .hero .right img {
+        height: 100%;
+    }
+
+    .hero .description {
+        margin-right: 25vw;
+    }
+
+    .hamburger-menu {
+        display: inline-block; 
+    }
+
+    ul.menu {
+        display: none !important;
+    }
+
+    .logo span {
+        font-size: 22px;
+    }
+
+    .logo img {
+        width: 30px;
+        margin-right: 10px;
+    }
+
+    .hero .column {
+        width: 100% !important;
+    }
+
+    .hero .container {
+      flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 966px) and (max-width: 1295px) {
+    .hero {
+        height: auto;
+    }
+    .hero .subtitle {
+        font-size: 3vw;
+    }
+    .hero .title {
+        font-size: 6vw;
+    }
+
+    .hero .description {
+        font-size: 1.3vw;
+    }
+    .counter-box { 
+        width: 16vw;
+    }
+
+    .counter-number {
+        font-size: 1.3rem;
+    }
+    
+    .counter-title {
+        font-size: .8rem;
+    }
+
+}
+
+/* Tablets */
+@media only screen and (min-width: 769px) and (max-width: 965px) {
+    .hero .subtitle {
+        font-size: 3.5vw;
+    }
+    .hero .title {
+        font-size: 12vw;
+    }
+
+    .hero .description {
+        font-size: 2vw;
+    }
+    .counter-box { 
+        width: 22vw;
+    }
+
+    .counter-number {
+        font-size: 1.3rem;
+    }
+    
+    .counter-title {
+        font-size: .8rem;
+    }
+
+}
+
+/* Medium phones */
+
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+    .hero .subtitle {
+        font-size: 7vw;
+    }
+    .hero .title {
+        font-size: 15vw;
+    }
+
+    .hero .description {
+        font-size: 3vw;
+        margin-right: 18vw;
+    }
+    .counter-box { 
+        width: 32vw;
+    }
+
+    .counter-number {
+        font-size: 4vw;
+    }
+    
+    .counter-title {
+        font-size: 2.6vw;
+    }
+
+    .counter-box:first-of-type{
+        top: 10px;
+        left: 0px;
+        z-index: 99;
+    }
+
+    .counter-box:nth-of-type(2){
+        bottom: 20px;
+        right: 5px;
+        z-index: 99;
+    }
+
+}
+
+/* small phones */
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    
+    .hero .subtitle {
+        font-size: 8vw;
+    }
+    .hero .title {
+        font-size: 15vw;
+    }
+    .hero .description {
+        font-size: 4vw;
+        margin-right: 6vw;
+    }
+    .counter-box { 
+        width: 40vw;
+    }
+
+    .counter-number {
+        font-size: 4vw;
+    }
+    
+    .counter-title {
+        font-size: 3vw;
+    }
+
+    .counter-box:first-of-type{
+        top: 10px;
+        left: 0px;
+        z-index: 99;
+    }
+
+    .counter-box:nth-of-type(2){
+        bottom: 20px;
+        right: 5px;
+        z-index: 99;
+    }
+}

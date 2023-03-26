@@ -1,0 +1,15 @@
+.topbar {
+    background-color: #e28778;
+    color: #fff;
+    padding: 5px 0;
+    width: 100%;
+
+}
+
+.topbar p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .8rem;
+    font-weight: 500;
+    text-align: center;
+}

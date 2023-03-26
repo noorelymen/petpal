@@ -1,0 +1,27 @@
+.register .column.left {
+    width: 50%;
+}
+
+.register .form-group {
+    width: 100%;
+}
+
+.register h1 {
+    font-size: 2rem;
+    color: var(--dark-blue);
+}
+
+.register input {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border: 1px solid #e4e4e4;
+    border-radius: 20px;
+}
+
+.w-50 {
+    width: 50% !important;
+    display: inline !important;
+    
+}

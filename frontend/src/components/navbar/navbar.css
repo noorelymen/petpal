@@ -1,0 +1,141 @@
+.navbar {
+    height: 50px;
+    background-color: #fff;
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid #dadada;
+    z-index: 999;
+}
+
+.navbar .container {
+  justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    height: 100%;
+    font: 500;
+    font-family: Posterama, sans-serif;
+    color: var(--dark-blue);
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 40px;
+    height: 100%;
+}
+
+.navbar .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar .menu-item a {
+    color: #000;
+}
+
+.navbar .menu-item a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--dark-blue);
+    transition: width .4s ease-in;
+}
+
+.navbar .menu-item a:hover {
+    color: var(--dark-blue);
+}
+
+.navbar .menu-item a:hover::after {
+    width: 100%;
+}
+
+.navbar .menu-item.active {
+    border: 1px solid #3c3c3c;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.nav-button {
+    margin-left: 10px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: var(--dark-blue);
+    border-radius: 20px;
+}
+
+.logo,
+.menu,
+.nav-items {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-items img {
+    width: 35px;
+    margin: 10px 0 10px 20px;
+}
+
+.nav-items img:hover { 
+    cursor: pointer;
+    transform: translateY(-8px);
+    transition: transform .2s ease-in-out;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.cart-icon {
+    position: relative;
+}
+
+.cart-count {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(206, 74, 74);
+    color: #fff;
+    border-radius: 50px;
+    position: absolute;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: -10px;
+}
+
+@media only screen and (max-width: 965px) {
+    .hamburger-menu {
+        display: inline-block; 
+    }
+
+    ul.menu {
+        display: none !important;
+    }
+
+    .logo span {
+        font-size: 22px;
+    }
+
+    .logo img {
+        width: 30px;
+        margin-right: 10px;
+    }
+}

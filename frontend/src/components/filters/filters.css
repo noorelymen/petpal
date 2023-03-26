@@ -1,0 +1,17 @@
+.filters .container{
+    flex-direction: column;
+}
+
+.filters-group {
+    padding: 30px 0px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.filters-input {
+    width: 25%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #e6e6e6;
+}

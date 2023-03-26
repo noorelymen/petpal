@@ -1,0 +1,28 @@
+.login .column.left {
+    width: 50%;
+}
+
+.login .form-group {
+    width: 100%;
+}
+
+.login h1 {
+    font-size: 2rem;
+    color: var(--dark-blue);
+}
+
+.login input {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border: 1px solid #e4e4e4;
+    border-radius: 20px;
+}
+
+.login hr {
+    width: 10%;
+    height: 3px;
+    background-color: var(--accent-color);
+    margin: 20px 0;
+}
