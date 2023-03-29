@@ -27,6 +27,7 @@ function App() {
       <Route path="/wishlist" element={<Wishlist/>}></Route>
       <Route path="/auth" element={<Auth/>}></Route>
       <Route path="/pets/:id" element={<Pet/>}></Route>
+      <Route path="/pets/category/:category" element={<Shop/>}></Route>
     </Routes>
     </BrowserRouter>
   )
